@@ -1,0 +1,17 @@
+{
+	"name": "xo-game",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"clean": "rimraf dist",
+		"rebuild": "yarn clean && yarn build",
+		"start": "node ./dist/index.js",
+		"restart": "yarn rebuild && yarn start"
+	},
+	"devDependencies": {
+		"@types/node": "^18.6.1",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.7.4"
+	}
+}
